@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./img/favicon.ico.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sparse Matrix Toolkit</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sparse Matrix Projects</h1>
+    <nav>
+      <button onclick="showProject('project1')">Convert to Sparse</button>
+      <button onclick="showProject('project2')">Transpose Matrix</button>
+      <button onclick="showProject('project3')">Add Matrices</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Project 1 -->
+    <section id="project1" class="project-section">
+      <h2>Project 1: Convert Matrix to Sparse Representation</h2>
+      <label>Matrix Size:</label>
+      <input type="number" id="rows" placeholder="Rows" min="1" value="3" />
+      <input type="number" id="cols" placeholder="Columns" min="1" value="3" />
+      <button onclick="generateMatrixTable()">Generate Matrix</button>
+      <div id="matrixContainer"></div>
+      <button onclick="convertToSparse()">Convert to Sparse</button>
+      <div class="output">
+        <h3>Sparse Representation:</h3>
+        <table id="sparseOutputTable"></table>
+      </div>
+    </section>
+
+    <!-- Project 2 -->
+    <section id="project2" class="project-section hidden">
+      <h2>Project 2: Transpose a Sparse Matrix</h2>
+      <label>Number of non-zero entries:</label>
+      <input type="number" id="sparseRows" min="1" value="2" />
+      <button onclick="generateSparseInputTable()">Generate Input Table</button>
+      <div id="sparseInputContainer"></div>
+      <button onclick="transposeFromTable()">Transpose</button>
+      <div class="output">
+        <h3>Transposed Sparse Matrix:</h3>
+        <table id="transposedSparseTable"></table>
+      </div>
+    </section>
+
+    <!-- Project 3 -->
+    <section id="project3" class="project-section hidden">
+      <h2>Project 3: Add Two Sparse Matrices</h2>
+      <label>Number of non-zero entries in Matrix A:</label>
+      <input type="number" id="rowsA" min="1" value="2" />
+      <button onclick="generateMatrixInput('A')">Generate Matrix A</button>
+      <div id="matrixAContainer"></div>
+
+      <label>Number of non-zero entries in Matrix B:</label>
+      <input type="number" id="rowsB" min="1" value="2" />
+      <button onclick="generateMatrixInput('B')">Generate Matrix B</button>
+      <div id="matrixBContainer"></div>
+
+      <button onclick="addSparseMatrices()">Add Matrices</button>
+      <div class="output">
+        <h3>Resulting Sparse Matrix:</h3>
+        <table id="resultMatrixTable"></table>
+      </div>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
