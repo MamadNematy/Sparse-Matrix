@@ -18,7 +18,7 @@ Each section is isolated and accessible via interactive tabs in a modern dark-th
 ## 📷 Demo
 
 👉 **Live Preview:**  
-https://MamadNematy.github.io/sparse-matrix-toolkit/
+[Here](https://mamadnematy.github.io/Sparse-Matrix/)
 
 ---
 
