@@ -1,11 +1,11 @@
-# 🧠 Sparse Matrix Toolkit
+# Sparse Matrix Toolkit
 
 A simple web-based toolkit for working with sparse matrices — built with HTML, CSS, and vanilla JavaScript.  
 This app offers **three main tools** in a single interface:
 
 ---
 
-## 🚀 Features
+## Features
 
 - ✅ **Convert Dense Matrix to Sparse Form**
 - 🔁 **Transpose Sparse Matrices**
