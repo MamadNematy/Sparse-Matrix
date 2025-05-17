@@ -27,7 +27,3 @@ Each section is isolated and accessible via interactive tabs in a modern dark-th
 - HTML5
 - CSS3 (Dark Theme, Responsive Design)
 - Vanilla JavaScript (No frameworks)
-
----
-
-## 📂 File Structure
